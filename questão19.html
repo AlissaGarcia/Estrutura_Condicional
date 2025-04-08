@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Questão 19 – Aprovação de Empréstimo</title>
+</head>
+
+<body>
+    <script> 
+    let emprestimo = Number(prompt("Digite o valor do empréstimo:")) 
+    let parcelas = Number(prompt("Digite o número de parcelas:")) 
+    let salario = Number(prompt("Digite o salário do solicitante:")) 
+    let valorParcela = emprestimo / parcelas 
+    if (valorParcela <= salario * 0.3) alert("Empréstimo aprovado") 
+    else alert("Empréstimo não aprovado")
+ </script>
+</body>
+
+</html>

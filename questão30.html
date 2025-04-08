@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Questão 30 – Regra do Impedimento</title>
+</head>
+
+<body>
+    <script> 
+    let L = Number(prompt("Digite a posição do jogador que lança a bola (L):")) 
+    let R = Number(prompt("Digite a posição do jogador que recebe a bola (R):")) 
+    let D = Number(prompt("Digite a posição do último defensor (D):")) 
+    let impedimento = (R > 50) && (L < R) && (R > D) 
+    alert(impedimento ? "S" : "N") 
+    </script>
+</body>
+
+</html>

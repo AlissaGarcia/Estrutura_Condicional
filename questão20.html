@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Questão 20 – Classificação de Produto (if/else)</title>
+</head>
+
+<body>
+    <script> 
+    let cod = Number(prompt("Digite o código do produto:")) 
+    let classificacao = "" 
+    if (cod === 1) classificacao = "Alimento não-perecível" 
+    else if (cod === 2 || cod === 3 || cod === 4) classificacao = "Alimento perecível" 
+    else if (cod === 5 || cod === 6) classificacao = "Vestuário" 
+    else if (cod === 7) classificacao = "Higiene pessoal" 
+    else if (cod === 8 || cod === 9 || cod === 10) classificacao = "Utensílios domésticos" 
+    else classificacao = "Inválido" 
+    alert(classificacao) </script>
+</body>
+
+</html>

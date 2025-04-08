@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Questão 27 – Imposto de Renda</title>
+</head>
+
+<body>
+    <script> 
+    let base = Number(prompt("Digite a base de cálculo mensal:")) 
+    let imposto = 0 
+    if (base <= 1903.98) imposto = 0 
+    else if (base <= 2826.65) imposto = base * 0.075 - 142.80 
+    else if (base <= 3751.05) imposto = base * 0.15 - 354.80 
+    else if (base <= 4664.68) imposto = base * 0.225 - 636.13 
+    else imposto = base * 0.275 - 756.53 
+    alert("Imposto de Renda devido: R$ " + imposto.toFixed(2)) </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Questão 11 – Aumento de Salário</title>
+</head>
+
+<body>
+    <script>
+     let codigo = Number(prompt("Digite o código do funcionário:"))
+      let salarioAtual = Number(prompt("Digite o salário atual:"))
+       let cargo = "", aumento = 0, novoSalario = salarioAtual
+        if (codigo === 1) { cargo = "ESCRITUÁRIO" 
+        aumento = salarioAtual * 0.5 
+        novoSalario = salarioAtual + aumento } 
+        else if (codigo === 2) { cargo = "SECRETÁRIO" 
+        aumento = salarioAtual * 0.35 
+        novoSalario = salarioAtual + aumento }
+         else if (codigo === 3) { cargo = "CAIXA" 
+         aumento = salarioAtual * 0.2 
+         novoSalario = salarioAtual + aumento } 
+         else if (codigo === 4) { cargo = "GERENTE"
+          aumento = salarioAtual * 0.1 
+          novoSalario = salarioAtual + aumento } 
+          else if (codigo === 5) { cargo = "DIRETOR" 
+          aumento = 0 } 
+          alert("Cargo: " + cargo + "\nAumento: " + aumento + "\nNovo Salário: " + novoSalario) </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Questão 10 – Menu de Operações</title>
+</head>
+
+<body>
+    <script> 
+    let opcao = prompt("Escolha a operação:\n1 - Somar dois números\n2 - Multiplicar dois números\n3 - Exponencial de um número por outro") 
+    let x = Number(prompt("Digite o primeiro número:")) 
+    let y = Number(prompt("Digite o segundo número:"))
+     let resultado = 0 
+     switch (opcao) { case "1": resultado = x + y 
+     break 
+     case "2": resultado = x * y
+      break 
+      case "3": resultado = Math.pow(x, y)
+       break 
+       default: alert("Opção inválida") 
+       break } 
+       alert("Resultado: " + resultado) </script>
+</body>
+
+</html>

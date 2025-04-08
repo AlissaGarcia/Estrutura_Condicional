@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Questão 26 – Bolão de Futebol</title>
+</head>
+
+<body>
+    <script> 
+    let palpiteA = Number(prompt("Digite o placar apostado para o Time A:")) 
+    let palpiteB = Number(prompt("Digite o placar apostado para o Time B:")) 
+    let realA = Number(prompt("Digite o placar real para o Time A:")) 
+    let realB = Number(prompt("Digite o placar real para o Time B:")) 
+    let pontos = 0 
+    if ((palpiteA > palpiteB && realA > realB) || (palpiteA < palpiteB && realA < realB) || (palpiteA === palpiteB && realA === realB)) pontos += 10 
+    if (palpiteA === realA) pontos += 5 
+    if (palpiteB === realB) pontos += 5 
+    alert("Pontos do apostador: " + pontos) </script>
+</body>
+
+</html>

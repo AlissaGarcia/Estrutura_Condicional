@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Questão 18 – Operações Básicas</title>
+</head>
+
+<body>
+    <script> 
+    let op = prompt("Escolha a operação:\n1 - Adição\n2 - Subtração\n3 - Divisão\n4 - Multiplicação") 
+    let a = Number(prompt("Digite o primeiro número:")) 
+    let b = Number(prompt("Digite o segundo número:")) 
+    let res = 0 
+    switch (op) { 
+        case "1": res = a + b 
+        break 
+        case "2": res = a - b 
+        break 
+        case "3": res = a / b 
+        break 
+        case "4": res = a * b 
+        break 
+        default: alert("Opção inválida") } 
+        alert("Resultado: " + res) </script>
+</body>
+
+</html>

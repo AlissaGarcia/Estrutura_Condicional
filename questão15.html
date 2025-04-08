@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Questão 15 – Estado Civil e Sexo</title>
+</head>
+
+<body>
+    <script> 
+    let estado = prompt("Digite a letra referente ao estado civil:\nC - Casado(a)\nS - Solteiro(a)\nV - Viúvo(a)\nQ - Desquitado(a)\nD - Divorciado(a)").toUpperCase() 
+    let descricao = "" 
+    switch (estado) { case "C": descricao = "Casado(a)" 
+    break 
+    case "S": descricao = "Solteiro(a)" 
+    break 
+    case "V": descricao = "Viúvo(a)" 
+    break 
+    case "Q": descricao = "Desquitado(a)" 
+    break 
+    case "D": descricao = "Divorciado(a)" 
+    break 
+    default: descricao = "Inválido" } 
+    alert(descricao) </script>
+</body>
+
+</html>

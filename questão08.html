@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Questão 8 – Classificação de Triângulo</title>
+</head>
+
+<body>
+    <script> 
+    let a = Number(prompt("Digite o lado a:")) 
+    let b = Number(prompt("Digite o lado b:")) 
+    let c = Number(prompt("Digite o lado c:")) 
+    if (a <= 0 || b <= 0 || c <= 0 || (a >= b + c) || (b >= a + c) || (c >= a + b)) { 
+        alert("Não forma um triângulo") } 
+        else if (a === b && b === c) { 
+            alert("Triângulo Equilátero") } 
+            else if (a === b || a === c || b === c) { 
+                alert("Triângulo Isósceles") } 
+                else { alert("Triângulo Escaleno") } </script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Questão 4 – Situação do Aluno</title>
+</head>
+
+<body>
+    <script> 
+    let notaA = Number(prompt("Digite a primeira nota (0 a 100):")) 
+    let notaB = Number(prompt("Digite a segunda nota (0 a 100):"))
+     let media = (notaA + notaB) / 2 
+     if (media >= 70) { alert("APROVADO") } 
+     else if (media < 40) { alert("REPROVADO") } 
+     else { let exame = Number(prompt("Você está de exame. Digite a nota do exame (0 a 100):")) 
+     let soma = media + exame
+     if (soma >= 100) alert("APROVADO no exame") 
+     else alert("REPROVADO no exame") } </script>
+</body>
+
+</html>

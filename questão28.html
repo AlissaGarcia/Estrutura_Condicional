@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Questão 28 – Área de Polígono</title>
+</head>
+
+<body>
+    <script> 
+    let lados = Number(prompt("Digite o número de lados (3, 4 ou 6):")) 
+    let tamanho = Number(prompt("Digite o tamanho dos lados:")) 
+    let area = 0 
+    switch (lados) { 
+        case 3: area = (tamanho * tamanho * 1.73) / 4 
+        break 
+        case 4: area = tamanho * tamanho 
+        break 
+        case 6: area = (6 * tamanho * tamanho * 1.73) / 4 
+        break 
+        default: alert("Não sei calcular a área") 
+        area = null } 
+        if (area !== null) alert("Área: " + area) </script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Questão 12 – Salário com Bonificação e Auxílio Escola</title>
+</head>
+
+<body>
+    <script> 
+    let salario = Number(prompt("Digite o salário:"))
+     let bonus = 0, auxilio = 0 
+     if (salario <= 500) bonus = salario * 0.05 
+     else if (salario <= 1200) bonus = salario * 0.12 
+     else bonus = 0
+      if (salario <= 600) auxilio = 150 
+     else auxilio = 100 
+     let novoSalario = salario + bonus + auxilio 
+     alert("Novo Salário: " + novoSalario) </script>
+</body>
+
+</html>

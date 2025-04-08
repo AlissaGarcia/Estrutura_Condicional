@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Questão 21 – Classificação de Produto (switch-case)</title>
+</head>
+
+<body>
+    <script> 
+    let codigo = Number(prompt("Digite o código do produto:")) 
+    let cat = "" 
+    switch (codigo) { 
+        case 1: cat = "Alimento não-perecível" 
+        break 
+        case 2: 
+        case 3: 
+        case 4: cat = "Alimento perecível" 
+        break 
+        case 5: case 6: cat = "Vestuário" 
+        break 
+        case 7: cat = "Higiene pessoal" 
+        break 
+        case 8: case 9: case 10: cat = "Utensílios domésticos" 
+        break 
+        default: cat = "Inválido" } 
+        alert(cat)
+         </script>
+</body>
+
+</html>

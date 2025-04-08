@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Questão 29 – Pagamento de Empregados</title>
+</head>
+
+<body>
+    <script> 
+    let func = Number(prompt("Digite o código do empregado:\n1 - Gerente\n2 - Trabalhador Comum\n3 - Trabalhador por Comissão\n4 - Trabalhador por Empreitada")) 
+    let pagamento = 0 
+    switch (func) { 
+        case 1: pagamento = Number(prompt("Digite o salário fixo mensal:")) 
+        break 
+        case 2: let horas = Number(prompt("Digite o número de horas trabalhadas na semana:")) 
+        let valorHora = Number(prompt("Digite o valor por hora:")) 
+        if (horas <= 40) pagamento = horas * valorHora 
+        else pagamento = 40 * valorHora + (horas - 40) * valorHora * 1.5 
+        break 
+        case 3: let vendas = Number(prompt("Digite o valor das vendas brutas:")) 
+        pagamento = 250 + vendas * 0.057 
+        break 
+        case 4: let itens = Number(prompt("Digite o número de itens produzidos:")) 
+        let valorItem = Number(prompt("Digite o valor fixo por item:")) 
+        pagamento = itens * valorItem 
+        break 
+        default: alert("Código inválido") } 
+        alert("Pagamento semanal: R$ " + pagamento) </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Questão 25 – Preço a Pagar</title>
+</head>
+
+<body>
+    <script> 
+    let precoEtiqueta = Number(prompt("Digite o preço de etiqueta:")) 
+    let cp = prompt("Digite o código da condição de pagamento:\n1 - À vista (10% desconto)\n2 - Cartão à vista (5% desconto)\n3 - 2x (preço normal)\n4 - 3x ou mais (10% de acréscimo)") 
+    let precoFinal = precoEtiqueta 
+    switch (cp) { 
+        case "1": precoFinal = precoEtiqueta * 0.90 
+        break 
+        case "2": precoFinal = precoEtiqueta * 0.95 
+        break 
+        case "3": precoFinal = precoEtiqueta 
+        break 
+        case "4": precoFinal = precoEtiqueta * 1.10 
+        break 
+        default: alert("Código inválido") } 
+        alert("Preço a pagar: R$ " + precoFinal.toFixed(2)) </script>
+</body>
+
+</html>

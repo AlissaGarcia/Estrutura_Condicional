@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Questão 6 – Contador de Cédulas</title>
+</head>
+
+<body>
+    <script> 
+    let valor = Math.floor(Number(prompt("Digite o valor (sem centavos):"))) 
+    let cedulas = [100, 50, 20, 10, 5, 2, 1] 
+    let resultado = "" 
+    for (let i = 0; i < cedulas.length; i++) { 
+        let q = Math.floor(valor / cedulas[i]) 
+        if (q > 0) { resultado += q + " cédula(s) de R$" + cedulas[i] + "\n" 
+        valor = valor % cedulas[i] } } 
+        alert(resultado) </script>
+</body>
+
+</html>

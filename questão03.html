@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Questão 3 – Média Aritmética e Exame</title>
+</head>
+
+<body>
+    <script> let n1 = Number(prompt("Digite a primeira nota:"))
+     let n2 = Number(prompt("Digite a segunda nota:")) 
+     let n3 = Number(prompt("Digite a terceira nota:")) 
+     let media = (n1 + n2 + n3) / 3 
+     if (media >= 7) { alert("Média: " + media + "\nAPROVADO") } 
+     else if (media < 3) { alert("Média: " + media + "\nREPROVADO") } 
+     else { let exame = Number(prompt("Você está de exame. Digite a nota do exame:"))
+      let notaNecessaria = 6 - media 
+      alert("Média: " + media + "\nVocê está em exame\nVocê precisa de: " + notaNecessaria + " pontos para ser aprovado") }
+       </script>
+</body>
+
+</html>

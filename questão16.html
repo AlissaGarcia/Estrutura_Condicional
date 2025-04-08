@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Questão 16 – Categoria da CNH</title>
+</head>
+
+<body>
+    <script> 
+    let categoria = prompt("Digite a categoria da carteira de motorista (A, B, C, D ou E):").toUpperCase() 
+    let veiculo = "" 
+    switch (categoria) { 
+        case "A": veiculo = "Motocicletas" 
+        break 
+        case "B": veiculo = "Automóveis" 
+        break 
+        case "C": veiculo = "Caminhões" 
+        break 
+        case "D": veiculo = "Ônibus" 
+        break 
+        case "E": veiculo = "Veículos articulados" 
+        break 
+        default: veiculo = "Categoria inválida" } 
+        alert("Tipo de veículo permitido: " + veiculo) </script>
+</body>
+
+</html>

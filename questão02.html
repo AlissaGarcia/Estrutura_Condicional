@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Questão 2 – Média Ponderada e Conceito</title>
+</head>
+
+<body>
+    <script> let nota1 = Number(prompt("Digite a nota do Trabalho de Laboratório:")) 
+    let nota2 = Number(prompt("Digite a nota da Avaliação Semestral:")) 
+    let nota3 = Number(prompt("Digite a nota do Exame Final:"))
+     let media = (nota1 * 2 + nota2 * 3 + nota3 * 5) / 10 
+     let conceito = ""
+      if (media >= 8) conceito = "A" 
+      else if (media >= 7) conceito = "B" 
+      else if (media >= 6) conceito = "C" 
+      else if (media >= 5) conceito = "D" 
+      else conceito = "E" 
+      alert("Média: " + media + "\nConceito: " + conceito) </script>
+</body>
+
+</html>
